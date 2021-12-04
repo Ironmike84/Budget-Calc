@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="graphstyle4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container" id="container">
+    <div class="modal-container" id="modal-container">
+        <button id="close">X</button>
+      
+    </div>
+
+    <div class="input">
+        <h1 id="title">Budget Calculator:</h1>
+
+<!----------------------------------------------------------------------------------------------- Monthly Total -->        
+        <img src="finance.jpg" id="finance" alt="">
+        <div>Budjet Total:</div>
+        <div class="totalDollars" id="totalDollars">$</div>
+        <br>
+        <label for="total">Total Monthly Income:</label>
+        <br>
+        <input type="number" id="total" placeholder="$">
+        <button id="stamp">Post</button>
+        <br>
+        <br>
+
+<!----------------------------------------------------------------------------------------------- Housing Cost-->
+        <label for="housing">Housing:</label>
+        <br>
+        <input type="number" id="housing" placeholder="$"> 
+        <button id="bar1Button">Deduct</button>
+
+<!---------------------------------------------------------------------------------- Add Housing Cost Section -->
+        <Div class="housingAdd" id="housingAdd">
+            <div class="housingAddTitleToggle" id="housingAddTitleToggle">Add Item:</div>
+            <button class="houseButton" id="houseButton">+</button>
+            <br>
+            <label for="mortgageCost">Mortgage:</label>
+            <br>
+            <input type="text" id="mortgageCost"placeholder="$">
+            <br>
+            <label for="maintainance">Maintainance:</label>
+            <br>
+            <input type="text" id="maintainance"placeholder="$">
+            <br>
+            <label for="propertyTaxes">Property Taxes:</label>
+            <br>
+            <input type="text" name="" id="propertyTaxes" placeholder="$"> 
+           <br>
+           <br>
+           <button id="addHousing">Add +</button>
+           <br>
+        </Div>
+       
+        <div class="housingTotal" id="housingTotal">Total: </div>
+<!----------------------------------------------------------------------------------------------- Food Cost-->       
+        <label for="food">Food:</label>
+        <br>
+        <input type="number" id="food" placeholder="$">
+        <button id="foodButton">Deduct</button>
+        <br>
+       
+
+        <Div class="foodAdd" id="foodAdd">
+            <div class="foodAddTitleToggle" id="foodAddTitleToggle">Add Item:</div>
+            <button class="foodButton2" id="foodButton2">+</button>
+            <br>
+            <label for="grocery">Grocery:</label>
+            <br>
+            <input type="text" id="grocery"placeholder="$">
+            <br>
+            <label for="dining">Dining Out:</label>
+            <br>
+            <input type="text" id="dining"placeholder="$">
+            <br>
+            <label for="snacks">Snacks:</label>
+            <br>
+            <input type="text" name="" id="snacks" placeholder="$"> 
+           <br>
+           <label for="alchohol">Alchohol:</label>
+           <br>
+           <input type="text" name="" id="alchohol" placeholder="$"> 
+          <br>
+           <br>
+           <button id="addFood">Add +</button>
+           <br>
+        </Div>
+
+        <div class="foodTotal" id="foodTotal">Total: </div>
+<!----------------------------------------------------------------------------------------------- Utilities -->        
+        <label for="utilities">Utilities</label>
+        <br>
+        <input type="number" id="utilities" placeholder="$">
+        <button id="utilitiesButton">Deduct</button>
+        <br>
+      
+       
+
+        <Div class="utilAdd" id="utilAdd">
+            <div class="utilAddTitleToggle" id="utilAddTitleToggle">Add Item:</div>
+            <button class="utilButton" id="utilButton">+</button>
+            <br>
+            <label for="electric">Electric:</label>
+            <br>
+            <input type="text" id="electric"placeholder="$">
+            <br>
+            <label for="gas">Gas:</label>
+            <br>
+            <input type="text" id="gas"placeholder="$">
+            <br>
+            <label for="water">Water:</label>
+            <br>
+            <input type="text" name="" id="water" placeholder="$"> 
+           <br>
+           <label for="cable">Cable & Internet:</label>
+           <br>
+           <input type="text" name="" id="cable" placeholder="$"> 
+          <br>
+           <br>
+           <button id="addUtil">Add +</button>
+           <br>
+        </Div>
+        <div class="utilTotal" id="utilTotal">Total: </div>
+<!----------------------------------------------------------------------------------------------- Car -->        
+        <label for="car">Car</label>
+        <br>
+        <input type="number" id="car" placeholder="$">
+        <button id="carButton">Deduct</button>
+        <br>
+   
+
+        <Div class="carAdd" id="carAdd">
+            <div class="carAddTitleToggle" id="carAddTitleToggle">Add Item:</div>
+            <button class="car2Button" id="car2Button">+</button>
+            <br>
+            <label for="carGas">Gas:</label>
+            <br>
+            <input type="text" id="carGas"placeholder="$">
+            <br>
+            <label for="maint">Maintanence:</label>
+            <br>
+            <input type="text" id="maint"placeholder="$">
+            <br>
+            <label for="tires">Tires:</label>
+            <br>
+            <input type="text" name="" id="tires" placeholder="$"> 
+           <br>
+           <label for="payment">Payment:</label>
+           <br>
+           <input type="text" name="" id="payment" placeholder="$"> 
+          <br>
+           <br>
+           <button id="addCar">Add +</button>
+           <br>
+        </Div>
+        <div class="carTotal" id="carTotal">Total: </div>
+        <hr>
+
+<!----------------------------------------------------------------------------------------------- SUBMIT BUTTONS -->        
+        <button id="totalExpenses">Total Expenses</button>
+        <button id="clear">Clear</button>
+        
+        <br>
+<hr>
+<!-------------------------------------------------------------------------------------------------- Graph -->
+    </div>
+    <div class="graph">
+        Expenses by %:
+        <div class="outer">
+            <div class="bar1" id="bar1">Housing: </div><div class="box1" id="box1">Housing:</div>
+            <div class="bar2" id="bar2">Food: </div><div class="box2" id="box2">Food:</div>
+            <div class="bar3" id="bar3">Utilities: </div><div class="box3" id="box3">Utilities:</div>
+            <div class="bar4" id="bar4">Car: </div><div class="box4" id="box4">Car:</div>
+        </div>
+
+
+<!----------------------------------------------------------------------------------------------- Totals Section -->        
+        <div class="totalContainer" id="totalContainer">
+            <div>Total Monthly Expenses:</div>
+            <div id="totalBar"></div>
+            <div>Total Monthly Income:</div>
+            <div id="totalIncome"></div>
+            <div>DTI:</div>
+            <div id="dtiBar"></div>
+
+            <div class="wrapper">
+            <div class="totals">
+                <div id="yearlyTotals">Yearly Totals:</div> 
+                <div id="incomeTotal">Yearly Income: </div>
+                <div id="expenseTotal">Yearly Expenses: </div>
+                <div id="yearlySavings">Yearly Savings: </div>
+            </div>
+
+<!----------------------------------------------------------------------------------------------- Savings Section -->            
+            <div class="savings" id="savings">
+               <label for="years">Savings in Years:</label>
+                <input type="text" id="years">
+                <button id="yearsButton">Calculate</button>
+                <div id="savingsTotal">Savings Total:</div>
+            </div>
+        
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------------------------------------------------------------------- Net Worth Section -->
+<div class="netWorth" id="netWorth">
+    <div class="netWorthLabel">Net Worth:</div>
+
+    <div class="debt" id="debt">
+    <div class="debtLabel">Debt:</div>
+    <label for="credit">Credit Cards:</label>
+    <input type="text" name="" id="credit" placeholder="$">
+    <label for="mortgage">Mortgage:</label>
+    <input type="text" name="" id="mortgage" placeholder="$">
+    <label for="carDebt">Car Debt:</label>
+    <input type="text" name="" id="carDebt" placeholder="$">
+    <label for="medical">Medical Debt:</label>
+    <input type="text" name="" id="medical" placeholder="$">
+    </div>
+
+<div class="assets">
+    <div class="assetsLabel">Assets:</div>
+    <label for="realEstate">Real Estate:</label>
+    <input type="text" name="" id="realEstate" placeholder="$">
+    <label for="property">Property</label>
+    <input type="text" name="" id="property" placeholder="$">
+    <label for="investments">Investments:</label>
+    <input type="text" name="" id="investments" placeholder="$">
+    <label for="cash">Cash:</label>
+    <input type="text" name="" id="cash" placeholder="$">
+</div>
+<div class="netTotal">
+ <div class="netTotalLabel">Net Total:
+    <button id="netButton">Calculate</button>
+ </div>
+ 
+
+</div>
+<div class="netWorthTotal">
+<div id="yourNet">Your Net</div> 
+<div id="americaNet">American Average $ 121,760</div>
+<div id="summaryLabel">Summary:</div>
+<div class="summary" id="summary"></div>
+</div>
+</div>
+</div>
+
+
+<!----------------------------------------------------------------------------------------------- Retirement Section -->
+<Div class="retirement">
+    <div class="retirementLabel">Retirement:</div>
+    <div class="retirementInput">
+        <label for="initialInv">Initial Investment:</label>
+        <input type="text" name="" id="initialInv"placeholder="$">
+        <br>
+        <label for="annualInt">Annual Intersest %:</label>
+        <input type="text" name="" id="annualInt"placeholder="%">
+        <br>
+        <label for="interestRate">Interest Rate %:</label>
+        <input type="text" name="" id="interestRate" placeholder="%">
+        <br>
+        <label for="contribution">Contribution:</label>
+        <input type="text" name="" id="contribution" placeholder="$">
+        <br>
+        <label for="lenthYears">Years:</label>
+        <br>
+        <input type="text" name="" id="lengthYears"  placeholder="Years">
+        <br>
+     
+        <label for="frequency">Compounding Frequency:</label>
+        <select id="frequency">
+            <option value="1">Anually</option>
+            <option value="6">Semi-Anually</option>
+            <option value="12">Monthly</option>
+            <option value="">Daily</option>
+            <option value="">Hourly</option>
+        </select>
+        <br>
+        <button id="retirementCalc">Calculate</button>
+        
+<!----------------------------------------------------------------------------------------------- Retirement Output (Bars) -->
+
+    </div>
+    <div class="retirementOutput">
+        <div id="money">Money</div>
+        <div id="output"></div>
+
+        <div>
+            <div id="retirementBar"></div>
+            <div id="americasRetirement"></div></div>
+            <div id="summary2">
+                <div id="summaryTitle">Summary:</div>
+                <div id="summaryContent"></div>
+            </div>
+        </div>
+    </div>
+</Div>
+
+</body>
+<script src="GraphScript4.js"></script>
+</html>
