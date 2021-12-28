@@ -1236,7 +1236,7 @@ body{
         2px 2px 7px rgba(23, 100, 0, 0.991);
         transition: .5s ease-in-out;
     }
-    
+
     #yearsButton:focus{
         text-shadow: none;
         color: green;
@@ -1248,7 +1248,6 @@ body{
         2px 2px 7px rgba(23, 100, 0, 0.991);
         transition: .5s ease-in-out;
     }
-    
     /* ------------------------------------------------------------------------------------------------------------ */
     #savingsTotal{
         text-align: center;
@@ -1268,7 +1267,6 @@ body{
         inset -1px -1px 2px rgba(24, 23, 23, 0.601),
         inset -3px -3px 5px rgba(19, 18, 18, 0.601);
     }
-    
     #finance{
         position: absolute;
         border: 2px solid rgba(136, 4, 4, 0.637);
@@ -1280,8 +1278,6 @@ body{
         3px 3px 8px rgba(14, 13, 14, 0.801);
         animation: fadeIn 3s ease-in-out;
     }
-    
-    
     .netWorth{
         margin-top: 10px;
         display: flex;
@@ -1289,7 +1285,6 @@ body{
         border: 1px dotted Red;
         width: 95vw;
     }
-    
     .debt{
         margin-left: 25px;
         display: flex;
@@ -1297,7 +1292,6 @@ body{
         flex-direction: column;
         border: 1px dotted rgb(161, 2, 2);
     }
-    
     .assets{
         margin-left: 25px;
         margin-right:15px;
@@ -1307,15 +1301,12 @@ body{
         height: inherit;
         border: 1px dotted green;
     }
-    
     .assetsLabel{
         background: linear-gradient(to left, rgba(25, 221, 7, 0.637), rgba(8, 73, 2, 0.637));
     }
-    
     .debtLabel {
         background-color: rgba(136, 4, 4, 0.637);
     }
-    
     .netWorthLabel{
         text-align: center;
         background: linear-gradient(to left, #615f5f, rgb(41, 38, 38));
@@ -1324,7 +1315,6 @@ body{
         height:inherit;
         box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.991);
     }
-    
     .netTotal{
         display: flex;
         flex-direction: row;
@@ -1333,7 +1323,6 @@ body{
     border: 1px outset black;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.991);
     }
-    
     .netTotalLabel{
         text-align: center;
         border-right:1px outset black;
@@ -1341,7 +1330,6 @@ body{
         height:inherit;
     }
     /* ------------------------------------------------------------------------------------------NET BUTTONS */
-    
     #netButton{
         font-family: 'Nunito', sans-serif;
         cursor: pointer;
@@ -1356,7 +1344,6 @@ body{
         margin-left: 5px;
         margin-bottom: 5px;
     }
-    
     #netButton:hover{
         text-shadow: none;
         font-family: 'Nunito', sans-serif;
@@ -1387,13 +1374,9 @@ body{
         margin-left: 5px;
         margin-bottom: 5px;
     }
-    
-    
     .netWorthTotal{
         width: inherit;
     }
-    
-    
     #yourNet{
         display: flex;
         flex-direction: column;
@@ -1404,12 +1387,10 @@ body{
         margin-top: 35px;
         border: 1px outset rgb(126, 122, 122);
         background: linear-gradient(to left, rgba(250, 3, 3, 0.537), rgba(136, 4, 4, 0.537));
-    
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.991),
         2px 2px 7px rgba(2, 2, 2, 0.991),
         4px 4px 10px rgba(0, 0, 0, 0.991);
     }
-    
     #yourNet:hover{
                 color: bisque;
             font-weight: bold;
@@ -1420,7 +1401,6 @@ body{
             4px 4px 10px rgba(105, 0, 0, 0.991);
             transition: .5s ease-in-out;
         }
-    
     #americaNet{
         display: flex;
         flex-direction: column;
@@ -1446,7 +1426,6 @@ body{
         4px 4px 10px rgba(105, 0, 0, 0.991);
         transition: .5s ease-in-out;
     }
-    
     .summary{
         padding: 30px;
         justify-content: center;
@@ -1458,16 +1437,12 @@ body{
         margin-left: 20px;
         margin-bottom: 10px;
     }
-    
-    
     .retirement{
         width: 95vw;
         display: flex;
         flex-direction: row;
         border: 1px solid rgb(92, 87, 87);
     }
-    
-    
     .retirementLabel{
         background-color: rgba(105, 0, 0, 0.991);
         border: 1px outset rgba(0, 0, 0, 0.991);
@@ -1476,7 +1451,6 @@ body{
                     2px 2px 12px rgba(0, 0, 0, 0.601),
                     4px 4px 12px rgba(0, 0, 0, 0.226);
     }
-    
     .retirementInput{
         padding: 10px;
         margin-left: 20px;
@@ -1550,7 +1524,6 @@ body{
     #modal-container{
         display: absolute;
     }
-    
     #is-visible{
     position: absolute;
     left: 20%;
@@ -1577,7 +1550,6 @@ body{
             filter: drop-shadow(30px 20px 46px #b1ababe7);
     z-index: 10;
     }
-    
     #close{
         font-size: 14px;
         color: bisque;
@@ -1592,7 +1564,6 @@ body{
                 2px 2px 3px black,
                 4px 4px 8px black;
     }
-    
     #close:hover{
         color: whitesmoke;
         font-size: 16px;
@@ -1600,7 +1571,6 @@ body{
         box-shadow: 1px 1px 2px rgb(95, 2, 2),
                 2px 2px 3px rgb(87, 0, 0),
                 4px 4px 8px rgb(102, 0, 0);
-    
     }
     #close:focus{
         color: red;
@@ -1609,7 +1579,6 @@ body{
         box-shadow: 1px 1px 2px rgb(95, 2, 2),
                 2px 2px 3px rgb(87, 0, 0),
                 4px 4px 8px rgb(102, 0, 0);
-    
     }
     }
 /* ====================================================================================================================== */
@@ -1620,7 +1589,7 @@ body{
 /* ==================================================================================================================== */
 @media screen and (min-width: 100px) and (max-width: 511px){
     #finance{
-      display: none;
+        display: none;
     }
         #title{
             animation: slideinRight 1.5s ease-in;
@@ -1642,7 +1611,6 @@ body{
             box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.601),
             2px 2px 3px rgba(0, 0, 0, 0.601);
         }
-        
         button{
             font-family: 'Nunito', sans-serif;
             cursor: pointer;
@@ -1655,7 +1623,6 @@ body{
             2px 2px 3px rgba(0, 0, 0, 0.991);
             animation: slideinRight 3s ease-in-out;
         }
-        
         button:hover{
             text-shadow: 1px 1px 3px rgb(185, 185, 169);
             color: bisque;
@@ -4845,7 +4812,6 @@ body{
                     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.601),
                     2px 2px 3px rgba(0, 0, 0, 0.601);
                 }
-                
                 button{
                     font-family: 'Nunito', sans-serif;
                     cursor: pointer;
@@ -4858,7 +4824,6 @@ body{
                     2px 2px 3px rgba(0, 0, 0, 0.991);
                     animation: slideinRight 3s ease-in-out;
                 }
-                
                 button:hover{
                     text-shadow: 1px 1px 3px rgb(185, 185, 169);
                     color: bisque;
@@ -4870,7 +4835,6 @@ body{
                     4px 4px 10px rgba(105, 0, 0, 0.991);
                     transition: .5s ease-in-out;
                 }
-                
                 button:focus{
                     color: red;
                     font-weight: bold;
@@ -4882,7 +4846,6 @@ body{
                     4px 4px 10px rgba(105, 0, 0, 0.991);
                     transition: .5s ease-in-out;
                 }
-                
                 input{
                     width: 150px;
                     margin-top: 5px;
@@ -4912,26 +4875,20 @@ body{
                     flex-direction: column;
                     flex-wrap: wrap;
                     width: 100vw;
-                
                 }
-                
                 .input {
                     background-image: url("shutterstock_391998307.jpg");
                     background-size: cover;
                     border: 1px inset silver;
-                    width: 600px;
+                    width: 100vw;
                     height: 55vh fit-content;
-                
                 }
-                
-                
                 .graph {
                     background: linear-gradient(to left, #423f3f, #000000);
                     border: 1px solid rgb(90, 88, 88);
                     width: 100vw;
                     height: 55vh fit-content;
                 }
-                
                 .outer {
                     background-image: url("iStock-1129637376.jpg");
                     background-size: cover;
@@ -5749,7 +5706,7 @@ body{
                     top:733px;
                     height: 20px;
                     width: 20px;
-                } 
+                }
                 /* ----------------------------------------------------------------------ADD HOUSING BUTTON */
                 #addCar{
                     font-family: 'Nunito', sans-serif;
